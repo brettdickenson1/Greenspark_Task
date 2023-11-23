@@ -38,7 +38,7 @@ export const fetchWidgetData = createAsyncThunk(
   "widgetData/fetch",
   async () => {
     try {
-      const url = String(process.env.REACT_APP_API_KEY);
+      const url = "https://api.mocki.io/v2/016d11e8/product-widgets";
       const response = await axios.get(url);
       return response.data;
     } catch (err) {
