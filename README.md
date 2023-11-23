@@ -1,3 +1,7 @@
+## Greenspark tech task
+
+This project was built with React, TS, SCSS, Redux and React Testing Library.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
