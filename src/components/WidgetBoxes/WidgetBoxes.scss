@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.widgetBox {
+  background-color: #f9f9f9;
+  padding: 10px 36px;
+  margin: 48px 22px 67px 22px;
+  max-width: 85rem;
+  border-radius: 8px;
+  box-shadow: 0px 0.77778px 2.99074px 0px rgba(0, 0, 0, 0.01),
+    0px 3.42222px 6.19259px 0px rgba(0, 0, 0, 0.02),
+    0px 8.4px 12.35px 0px rgba(0, 0, 0, 0.03),
+    0px 16.17778px 24.20741px 0px rgba(0, 0, 0, 0.03),
+    0px 27.22222px 44.50926px 0px rgba(0, 0, 0, 0.04),
+    0px 42px 76px 0px rgba(0, 0, 0, 0.05);
+  h3 {
+    font-family: "Cabin";
+    font-size: clamp(1.5rem, 1rem + 10vw, 1.875rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  hr {
+    background-color: #b0b0b0;
+    height: 2px;
+    border-radius: 10px;
+  }
+  .outerBox {
+    padding-top: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    .top {
+      color: white;
+      border-radius: 6px;
+      padding: 10px;
+      display: flex;
+      min-width: 200px;
+      align-items: center;
+      img {
+        margin-right: 15px;
+      }
+      .widgetContainer {
+        transform: translateY(-5px);
+        line-height: 3px;
+        p {
+          font-size: 12.5px;
+          font-family: "Cabin", "sans-serif";
+          font-weight: 400;
+        }
+      }
+      .widgetTitle {
+        display: flex;
+        span {
+          font-family: "Cabin", "sans-serif";
+          font-size: 17.8px;
+          font-weight: 700;
+          display: flex;
+          align-items: baseline;
+          transform: translateY(2px);
+        }
+      }
+      p {
+        font-size: 12.5px;
+        font-family: "Cabin", "sans-serif";
+        font-weight: 400;
+      }
+      span {
+        font-size: 17.8px;
+        font-weight: 700;
+        display: flex;
+        align-items: baseline;
+        transform: translateY(2px);
+      }
+    }
+    .bottom {
+      .innerBottom {
+        margin-top: 15px;
+        max-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      p {
+        color: #3b755f;
+        font-family: "Cabin", "sans-serif";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .publicProfile {
+        display: flex;
+        position: relative;
+        img {
+          position: absolute;
+          transform: translateX(2px);
+          right: -15px;
+          top: 10px;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+        .tooltip {
+          position: relative;
+          cursor: pointer;
+          a {
+            color: #3b755f;
+          }
+        }
+
+        .tooltip .tooltiptext {
+          font-family: "Cabin", "sans-serif";
+          visibility: hidden;
+          width: 248px;
+          height: 162px;
+          background-color: white;
+          color: black;
+          text-align: center;
+          border-radius: 6px;
+          display: inline-flex;
+          padding: 24px 16px;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          box-shadow: 0px 0.77778px 2.99074px 0px rgba(0, 0, 0, 0.01),
+            0px 3.42222px 6.19259px 0px rgba(0, 0, 0, 0.02),
+            0px 8.4px 12.35px 0px rgba(0, 0, 0, 0.03),
+            0px 16.17778px 24.20741px 0px rgba(0, 0, 0, 0.03),
+            0px 27.22222px 44.50926px 0px rgba(0, 0, 0, 0.04),
+            0px 42px 76px 0px rgba(0, 0, 0, 0.05);
+          position: absolute;
+          z-index: 2;
+          opacity: 0;
+          transition: 300ms;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .coloredBtns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: "100%";
+        .colorBox {
+          display: flex;
+          align-items: center;
+        }
+
+        .colorBox button {
+          height: 16px;
+          width: 16px;
+          border-color: transparent;
+          margin-right: 5px;
+        }
+
+        .colorBox button:hover {
+          opacity: 0.8;
+        }
+
+        .colorBoxBorder {
+          border: 1px solid orange;
+        }
+      }
+      .activateBadge {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .skeletonContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .widgetBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 419px;
+    width: 850px;
+    margin: 0px;
+    padding-top: 0px;
+    h3 {
+      text-align: start;
+    }
+    .innerBoxes {
+      display: flex;
+      justify-content: space-between;
+    }
+    .top {
+      width: 220px;
+    }
+    .skeletonContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -20px;
+    }
+  }
+}
