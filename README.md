@@ -4,7 +4,9 @@ This project was built with React, TS, SCSS, Redux and React Testing Library.
 
 When building the app I used React and SCSS for a dynamic responsive app. Redux was also used for global state management, which stored & fetched api data then dispatched actions to update the state depending on user interactions e.g. (when user clicks toggle set state === !state).
 
-Finally, I used typescript to help with type checking and cleaner code. Using TS allowed me to set types initally so I knew exactly what my props data types should be, this prevented bugs etc.
+I used typescript to help with type checking and cleaner code. Using TS allowed me to set types initally so I knew exactly what my props data types should be, this prevented bugs etc.
+
+Finally, I ran a few simple basic tests using react-testing-library to test for correct initial state, correct content on page, state updates working properly etc.
 
 # Getting Started with Create React App
 
