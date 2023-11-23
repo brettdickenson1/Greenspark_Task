@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import "./WidgetBoxes.scss";
 import { useAppDispatch, useAppSelector } from "../../store/hooks/hooks";
 import {
@@ -40,7 +40,7 @@ const WidgetBoxes: React.FC = () => {
       .unwrap()
       .then(() => dispatch(updateWidgetState()))
       .catch((e) => e);
-  }, []);
+  }, [dispatch]);
 
   const updateColor = (index: number, boxColor: string, colorID: number) => {
     dispatch(

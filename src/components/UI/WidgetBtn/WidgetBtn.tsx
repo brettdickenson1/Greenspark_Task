@@ -11,11 +11,11 @@ const WidgetBtn: React.FC<BtnProps> = ({
   const widgetBoxColors = widgetData?.boxColors;
 
   useEffect(() => {
-    widgetBoxColors?.map((res) => {
+    widgetBoxColors?.forEach((res) => {
       if (res.setFocus) {
         setBoxColorID(res.colorID);
       }
-    }, []);
+    });
   });
 
   const handleClick = () => {

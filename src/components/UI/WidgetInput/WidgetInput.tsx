@@ -16,7 +16,6 @@ const WidgetInput: React.FC<InputProps> = ({
       {toggleStyles ? (
         <label className="switch">
           <input
-            role="input"
             onClick={handleClick}
             checked={checkedState}
             readOnly
@@ -29,7 +28,6 @@ const WidgetInput: React.FC<InputProps> = ({
       ) : (
         <div data-testid="activeInput" className="profileCheckbox">
           <input
-            role="input"
             onClick={handleClick}
             checked={checkedState}
             readOnly
