@@ -8,9 +8,9 @@ import {
   activateLinked,
   updateWidgetState,
 } from "../../store/features/widgetSlice";
-import greenSparkLogo from "../../assets/images/greenspark-logo.svg";
-import greenSparkLogoGreen from "../../assets/images/greenspark-logo-green.svg";
-import greenSparkLogoBlack from "../../assets/images/greenspark-logo-black.svg";
+import greenSparkLogo from "../../assets/images/logo.jpg";
+// import greenSparkLogoGreen from "../../assets/images/greenspark-logo-green.svg";
+// import greenSparkLogoBlack from "../../assets/images/greenspark-logo-black.svg";
 import toolTipImg from "../../assets/images/Tooltip.svg";
 import WidgetBtn from "../UI/WidgetBtn/WidgetBtn";
 import WidgetInput from "../UI/WidgetInput/WidgetInput";
@@ -58,7 +58,7 @@ const WidgetBoxes: React.FC = () => {
 
   return (
     <div className="widgetBox" data-testid="widgetBox">
-      <h3>Per product widgets</h3>
+      <h3>Product Widgets</h3>
       <hr />
       {widgetData?.length > 0 && !loading ? (
         <div className={"innerBoxes"}>
@@ -78,13 +78,15 @@ const WidgetBoxes: React.FC = () => {
                   className="top"
                 >
                   <img
-                    src={
-                      widget.selectedColor === COLORS.creme
-                        ? greenSparkLogoGreen
-                        : widget.selectedColor === "white"
-                        ? greenSparkLogoBlack
-                        : greenSparkLogo
-                    }
+                    style={{ height: 40, width: 40 }}
+                    src={greenSparkLogo}
+                    // src={
+                    //   widget.selectedColor === COLORS.creme
+                    //     ? greenSparkLogoGreen
+                    //     : widget.selectedColor === "white"
+                    //     ? greenSparkLogoBlack
+                    //     : greenSparkLogo
+                    // }
                     alt="greensparkLogo"
                   />
                   <div data-testid="widgetDesc" className="widgetContainer">
